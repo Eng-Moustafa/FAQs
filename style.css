@@ -1,0 +1,89 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+
+### Font
+
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contianer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* background-color: red; */
+  margin: auto;
+  width: 70%;
+}
+#mins {
+  display: none;
+}
+.answer {
+  display: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  /* background-color: red; */
+}
+
+button {
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+p {
+  padding-inline: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 90%;
+
+  margin: auto;
+  line-height: 20px;
+  color: hsl(275, 100%, 97%);
+}
+
+img {
+  padding-left: 40px;
+}
+
+.pointer {
+  /* background-color: rebeccapurple; */
+  text-align: center;
+  margin: auto;
+}

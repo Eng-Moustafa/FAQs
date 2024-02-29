@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hide and Show Clicked Button Content</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      p {
+        display: none;
+      }
+
+      .content {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="btn">
+        Click me
+        <img
+          class="mins"
+          src="/assets/images/icon-minus.svg"
+          alt=""
+          style="display: none"
+        />
+        <img class="plus" src="/assets/images/icon-plus.svg" alt="" />
+      </button>
+
+      <p class="answer">answer</p>
+    </div>
+
+    <div>
+      <button class="btn">
+        Click me
+        <img
+          class="mins"
+          src="/assets/images/icon-minus.svg"
+          alt=""
+          style="display: none"
+        />
+        <img class="plus" src="/assets/images/icon-plus.svg" alt="" />
+      </button>
+
+      <p class="answer">answer</p>
+    </div>
+
+    <div>
+      <button class="btn">
+        Click me
+        <img
+          class="mins"
+          src="/assets/images/icon-minus.svg"
+          alt=""
+          style="display: none"
+        />
+        <img class="plus" src="/assets/images/icon-plus.svg" alt="" />
+      </button>
+
+      <p class="answer">answer</p>
+    </div>
+
+    <script>
+      $(".btn").click(function () {
+        var $btn = $(this);
+        var $content = $btn.next(".answer");
+
+        $content.slideToggle(1000);
+
+        $btn.find(".plus").toggle();
+        $btn.find(".mins").toggle();
+      });
+    </script>
+  </body>
+</html>
